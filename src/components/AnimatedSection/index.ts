@@ -1,1 +1,2 @@
-export { default } from './AnimatedSection'
+export * from './AnimatedSection'
+export * from './AnimateSection.type'

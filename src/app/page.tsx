@@ -9,7 +9,7 @@ import Footer from '@/components/Footer/Footer'
 import ProductCard from '@/components/ProductCard/ProductCard'
 import AboutSection from '@/components/AboutSection/AboutSection'
 import ContactSection from '@/components/ContactSection/ContactSection'
-import AnimatedSection from '@/components/AnimatedSection'
+import AnimatedSection from '@/components/AnimatedSection/AnimatedSection'
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState('all')
