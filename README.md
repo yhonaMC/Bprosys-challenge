@@ -1,12 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### Instalación
 
-## Getting Started
-
-First, run the development server:
+1. Clonar el repositorio:
 
 ```bash
+git clone <url-del-repositorio>
+cd random-users-app
+```
+
+2. Instalar dependencias:
+
+```bash
+npm run dev
+# o
 yarn dev
 ```
+
+3. Iniciar el servidor de desarrollo:
+
+```bash
+npm run dev
+# o
+yarn dev
+```
+
+4. Abrir [http://localhost:3000/](http://localhost:3000/) para ver la aplicación en tu navegador.
+
 
 # 📊 Análisis de la Aplicación de Productos Financieros
 
