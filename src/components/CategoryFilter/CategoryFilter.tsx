@@ -1,15 +1,7 @@
 import React from 'react'
 import { Tabs, TabButton } from '../ui/StyledComponents'
 import { CategoryFilterProps } from './CategoryFilter.type'
-
-const categories: { id: string; label: string }[] = [
-  { id: 'all', label: 'All Products' },
-  { id: 'account', label: 'Accounts' },
-  { id: 'card', label: 'Cards' },
-  { id: 'investment', label: 'Investments' },
-  { id: 'insurance', label: 'Insurance' },
-  { id: 'loan', label: 'Loans' }
-]
+import { categories } from '@/data/products'
 
 const CategoryFilter: React.FC<CategoryFilterProps> = ({
   selectedCategory,
