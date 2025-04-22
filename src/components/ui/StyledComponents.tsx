@@ -24,6 +24,7 @@ export const Button = styled.button`
   font-weight: 500;
   padding: 0.75rem 1.5rem;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 
   &.primary {
     background-color: #003087;
@@ -74,7 +75,7 @@ export const Badge = styled.span`
   border-radius: 9999px;
   padding: 0.25rem 0.75rem;
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: 600;
 
   &.low {
     background-color: #e6f7ee;
@@ -113,6 +114,7 @@ export const TabButton = styled.button`
   border-bottom: 2px solid transparent;
   background: transparent;
   transition: all 0.2s;
+  cursor: pointer;
 
   &:hover {
     color: #111827;
@@ -144,7 +146,7 @@ export const RateDisplay = styled.div`
 export const BenefitsList = styled.ul`
   margin: 1rem 0;
   padding-left: 1.5rem;
-
+  color: #000;
   li {
     margin-bottom: 0.5rem;
     position: relative;
@@ -161,10 +163,11 @@ export const BenefitsList = styled.ul`
 
 export const ProductImage = styled.div`
   width: 100%;
-  height: 180px;
+  height: 200px;
   background-size: cover;
   background-position: center;
   background-color: #f3f4f6;
+  background-repeat: no-repeat;
 `
 
 export const CardContent = styled.div`
@@ -180,7 +183,7 @@ export const CategoryTag = styled.span`
   border-radius: 9999px;
   padding: 0.25rem 0.75rem;
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: capitalize;
   background-color: #e6eeff;
   color: #003087;
