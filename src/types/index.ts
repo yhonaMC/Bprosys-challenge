@@ -1,11 +1,11 @@
 export type RiskLevel = 'low' | 'medium' | 'high'
 
 export type ProductCategory =
-  | 'account'
-  | 'card'
-  | 'investment'
-  | 'insurance'
-  | 'loan'
+  | 'Cuentas'
+  | 'Tarjetas'
+  | 'Inversiones'
+  | 'Seguros'
+  | 'Préstamos'
 
 export interface FinancialProduct {
   id: string
@@ -22,4 +22,8 @@ export interface FinancialProduct {
   termLength?: number
   returnRate?: number
   coverage?: string
+}
+
+export interface MobileMenuProps {
+  $isOpen: boolean
 }
