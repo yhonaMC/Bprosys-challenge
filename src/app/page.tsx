@@ -1,6 +1,5 @@
 'use client'
 import React, { useState } from 'react'
-
 import { Container } from '../components/ui/StyledComponents'
 import { financialProducts } from '../data/products'
 import Header from '@/components/Header/Header'
@@ -10,6 +9,7 @@ import Footer from '@/components/Footer/Footer'
 import ProductCard from '@/components/ProductCard/ProductCard'
 import AboutSection from '@/components/AboutSection/AboutSection'
 import ContactSection from '@/components/ContactSection/ContactSection'
+import AnimatedSection from '@/components/AnimatedSection'
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState('all')
@@ -28,7 +28,7 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
 
-        <section id="products" className="py-16">
+        <AnimatedSection id="products" className="py-16">
           <Container>
             <div className="mb-12 text-center">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -52,10 +52,15 @@ export default function Home() {
               ))}
             </div>
           </Container>
-        </section>
+        </AnimatedSection>
 
-        <AboutSection />
-        <ContactSection />
+        <AnimatedSection>
+          <AboutSection />
+        </AnimatedSection>
+
+        <AnimatedSection>
+          <ContactSection />
+        </AnimatedSection>
       </main>
 
       <Footer />

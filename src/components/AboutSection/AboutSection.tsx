@@ -1,25 +1,50 @@
 import React from 'react'
 import { Container } from '../ui/StyledComponents'
-import { AboutContent, AboutImage, AboutText } from './AboutSection.style'
-import { AboutSectionWrapper } from './AboutSection.style'
+import { motion } from 'framer-motion'
+import { useInView } from 'framer-motion'
 import Image from 'next/image'
 import aboutDigitalBank from '../../../public/images/mesa_newtalent.jpg'
+import {
+  AboutContent,
+  AboutImage,
+  AboutSectionWrapper,
+  AboutText,
+  itemVariants,
+  containerVariants
+} from './AboutSection.style'
 
 const AboutSection: React.FC = () => {
+  const ref = React.useRef(null)
+  const isInView = useInView(ref, { once: true, amount: 0.2 })
+
   return (
     <AboutSectionWrapper id="about">
       <Container>
-        <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Nosotros</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <motion.div
+          className="mb-12 text-center"
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? 'visible' : 'hidden'}
+          ref={ref}
+        >
+          <motion.h2
+            className="text-3xl font-bold text-gray-900 mb-4"
+            variants={itemVariants}
+          >
+            Nosotros
+          </motion.h2>
+          <motion.p
+            className="text-lg text-gray-600 max-w-2xl mx-auto"
+            variants={itemVariants}
+          >
             Conoce más sobre DigitalBank y nuestra misión de transformar la
             banca digital
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
         <AboutContent>
           <AboutText>
-            <h3>Transformando el futuro de la banca</h3>
+            <h2>Transformando el futuro de la banca</h2>
             <p>
               En DigitalBank, somos una institución financiera digital líder,
               comprometida con brindar soluciones bancarias modernas y

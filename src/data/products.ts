@@ -35,7 +35,7 @@ export const financialProducts: FinancialProduct[] = [
       'Planes de ahorro automatizados'
     ],
     imageUrl: '/images/security.png',
-    monthlyFee: 0,
+    monthlyFee: 5,
     minimumDeposit: 50,
     typePercentage: 'Tasa de interés'
   },

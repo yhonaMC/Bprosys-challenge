@@ -105,3 +105,24 @@ export const MobileNavLink = styled.div`
     font-weight: 600;
   }
 `
+
+export const navVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      when: 'beforeChildren',
+      staggerChildren: 0.1
+    }
+  }
+}
+
+export const itemVariants = {
+  hidden: { opacity: 0, y: -10 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.3 }
+  }
+}
