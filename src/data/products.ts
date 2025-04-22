@@ -17,7 +17,8 @@ export const financialProducts: FinancialProduct[] = [
     ],
     imageUrl: '/images/mesa_management.jpg',
     monthlyFee: 0,
-    minimumDeposit: 100
+    minimumDeposit: 100,
+    typePercentage: 'Tasa de interés'
   },
   {
     id: '2',
@@ -35,7 +36,8 @@ export const financialProducts: FinancialProduct[] = [
     ],
     imageUrl: '/images/security.png',
     monthlyFee: 0,
-    minimumDeposit: 50
+    minimumDeposit: 50,
+    typePercentage: 'Tasa de interés'
   },
   {
     id: '3',
@@ -52,7 +54,8 @@ export const financialProducts: FinancialProduct[] = [
       'Sin comisiones por transacciones en el extranjero'
     ],
     imageUrl: '/images/tdb-1.avif',
-    monthlyFee: 10
+    monthlyFee: 10,
+    typePercentage: 'Cuota de mantenimiento'
   },
   {
     id: '4',
@@ -69,7 +72,8 @@ export const financialProducts: FinancialProduct[] = [
       'Notificaciones en tiempo real'
     ],
     imageUrl: '/images/tdb-2.avif',
-    monthlyFee: 0
+    monthlyFee: 0,
+    typePercentage: 'Cuota de mantenimiento'
   },
   {
     id: '5',
@@ -86,7 +90,9 @@ export const financialProducts: FinancialProduct[] = [
       'Opciones de contribución flexibles'
     ],
     imageUrl: '/images/images.jpeg',
-    returnRate: 8.5
+    returnRate: 8.5,
+    interestRate: 4.5,
+    typePercentage: 'Tasa de interés'
   },
   {
     id: '6',
@@ -105,7 +111,8 @@ export const financialProducts: FinancialProduct[] = [
     ],
     imageUrl: '/images/proteger-inversiones.jpg',
     termLength: 36,
-    returnRate: 3.8
+    returnRate: 3.8,
+    typePercentage: 'Tasa de interés'
   },
 
   {
@@ -123,7 +130,8 @@ export const financialProducts: FinancialProduct[] = [
       'Cobertura adicional de gastos de vida'
     ],
     imageUrl: '/images/segurossalud.jpg',
-    coverage: 'Hasta $500,000'
+    coverage: 'Hasta $500,000',
+    typePercentage: 'Prima mensual'
   },
 
   {
@@ -141,7 +149,8 @@ export const financialProducts: FinancialProduct[] = [
       'Sin penalizaciones por pago anticipado'
     ],
     imageUrl: '/images/prestamo-financiero.avif',
-    termLength: 60
+    termLength: 60,
+    typePercentage: 'Tasa de interés'
   },
   {
     id: '9',
@@ -158,7 +167,8 @@ export const financialProducts: FinancialProduct[] = [
       'Asesor hipotecario dedicado'
     ],
     imageUrl: '/images/prestamo-personal.jpg',
-    termLength: 360
+    termLength: 360,
+    typePercentage: 'Tasa de interés'
   }
 ]
 

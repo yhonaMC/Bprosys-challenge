@@ -30,10 +30,15 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const renderRate = () => {
     if (product.interestRate) {
       return (
-        <RateDisplay>
-          <span className="rate">{product.interestRate.toFixed(1)}</span>
-          <span className="percent">%</span>
-        </RateDisplay>
+        <div>
+          <span className="text-xs text-gray-500 font-bold mb-1 line-clamp-2">
+            {product.typePercentage}
+          </span>
+          <RateDisplay>
+            <span className="rate">{product.interestRate.toFixed(1)}</span>
+            <span className="percent">%</span>
+          </RateDisplay>
+        </div>
       )
     }
 
@@ -64,6 +69,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <CardContent>
           <div className="flex justify-between items-start mb-2">
             <CategoryTag>{product.category}</CategoryTag>
+
             {renderRiskBadge()}
           </div>
 

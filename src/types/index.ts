@@ -22,6 +22,7 @@ export interface FinancialProduct {
   termLength?: number
   returnRate?: number
   coverage?: string
+  typePercentage?: string
 }
 
 export interface MobileMenuProps {
