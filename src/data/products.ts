@@ -4,204 +4,208 @@ export const financialProducts: FinancialProduct[] = [
   {
     id: '1',
     name: 'DigiBanking Premium',
-    type: 'Checking Account',
-    category: 'account',
+    type: 'Cuenta Corriente',
+    category: 'Cuentas',
     interestRate: 0.5,
     description:
-      'Our premium checking account with no monthly fees and high daily transfer limits.',
+      'Nuestra cuenta corriente premium sin comisiones mensuales y con altos límites de transferencia diaria.',
     benefits: [
-      'No monthly maintenance fee',
-      '24/7 customer service',
-      'Free international transfers',
-      'Premium digital card included'
+      'Sin comisión de mantenimiento mensual',
+      'Servicio al cliente 24/7',
+      'Transferencias internacionales gratuitas',
+      'Tarjeta digital premium incluida'
     ],
-    imageUrl: '/images/products/checking.jpg',
+    imageUrl: '/images/mesa_management.jpg',
     monthlyFee: 0,
     minimumDeposit: 100
   },
   {
     id: '2',
-    name: 'Savings Plus',
-    type: 'Savings Account',
-    category: 'account',
+    name: 'Ahorro Plus',
+    type: 'Cuenta de Ahorro',
+    category: 'Cuentas',
     interestRate: 2.5,
-    description: 'A high-yield savings account to help your money grow faster.',
+    description:
+      'Una cuenta de ahorro de alto rendimiento para hacer crecer tu dinero más rápido.',
     benefits: [
-      'Competitive interest rate',
-      'No minimum balance required',
-      'Easy access to your funds',
-      'Automated savings plans'
+      'Tasa de interés competitiva',
+      'Sin saldo mínimo requerido',
+      'Fácil acceso a tus fondos',
+      'Planes de ahorro automatizados'
     ],
-    imageUrl: '/images/products/savings.jpg',
+    imageUrl: '/images/security.png',
     monthlyFee: 0,
     minimumDeposit: 50
   },
   {
     id: '3',
-    name: 'Elite Rewards Card',
-    type: 'Credit Card',
-    category: 'card',
+    name: 'Tarjeta Elite Rewards',
+    type: 'Tarjeta de Crédito',
+    category: 'Tarjetas',
     interestRate: 18.9,
     description:
-      'Premium credit card with extensive rewards program and travel benefits.',
+      'Tarjeta de crédito premium con un amplio programa de recompensas y beneficios de viaje.',
     benefits: [
-      '5% cashback on travel purchases',
-      '3% cashback on dining',
-      '1% cashback on all other purchases',
-      'No foreign transaction fees'
+      '5% de cashback en compras de viaje',
+      '3% de cashback en restaurantes',
+      '1% de cashback en todas las demás compras',
+      'Sin comisiones por transacciones en el extranjero'
     ],
-    imageUrl: '/images/products/elite-card.jpg',
+    imageUrl: '/images/tdb-1.avif',
     monthlyFee: 10
   },
   {
     id: '4',
-    name: 'Everyday Debit',
-    type: 'Debit Card',
-    category: 'card',
+    name: 'Débito Diario',
+    type: 'Tarjeta de Débito',
+    category: 'Tarjetas',
+    interestRate: 18.9,
     description:
-      'Your everyday companion for purchases and ATM withdrawals worldwide.',
+      'Tu compañera diaria para compras y retiros en cajeros automáticos en todo el mundo.',
     benefits: [
-      'No transaction fees',
-      'Worldwide ATM access',
-      'Contactless payments',
-      'Real-time notifications'
+      'Sin comisiones por transacción',
+      'Acceso a cajeros automáticos en todo el mundo',
+      'Pagos sin contacto',
+      'Notificaciones en tiempo real'
     ],
-    imageUrl: '/images/products/debit-card.jpg',
+    imageUrl: '/images/tdb-2.avif',
     monthlyFee: 0
   },
   {
     id: '5',
-    name: 'Balanced Growth Fund',
-    type: 'Investment Fund',
-    category: 'investment',
+    name: 'Fondo de Crecimiento Equilibrado',
+    type: 'Fondo de Inversión',
+    category: 'Inversiones',
     riskLevel: 'medium',
     description:
-      'A balanced portfolio of stocks and bonds designed for steady long-term growth.',
+      'Una cartera equilibrada de acciones y bonos diseñada para un crecimiento estable a largo plazo.',
     benefits: [
-      'Professional portfolio management',
-      'Diversified investment strategy',
-      'Regular performance reports',
-      'Flexible contribution options'
+      'Gestión profesional de la cartera',
+      'Estrategia de inversión diversificada',
+      'Informes regulares de rendimiento',
+      'Opciones de contribución flexibles'
     ],
-    imageUrl: '/images/products/balanced-fund.jpg',
+    imageUrl: '/images/images.jpeg',
     returnRate: 8.5
   },
   {
     id: '6',
-    name: 'High Yield Bond',
-    type: 'Bond',
-    category: 'investment',
+    name: 'Bono de Alto Rendimiento',
+    type: 'Bono',
+    category: 'Inversiones',
     riskLevel: 'low',
     interestRate: 3.8,
     description:
-      'Corporate bonds with competitive yields and moderate risk profile.',
+      'Bonos corporativos con rendimientos competitivos y perfil de riesgo moderado.',
     benefits: [
-      'Fixed income stream',
-      'Lower risk than stocks',
-      'Portfolio diversification',
-      'Capital preservation focus'
+      'Flujo de ingresos fijo',
+      'Menor riesgo que las acciones',
+      'Diversificación de cartera',
+      'Enfoque en la preservación del capital'
     ],
-    imageUrl: '/images/products/bond.jpg',
+    imageUrl: '/images/proteger-inversiones.jpg',
     termLength: 36,
     returnRate: 3.8
   },
+
   {
     id: '7',
-    name: 'Aggressive Growth Fund',
-    type: 'Investment Fund',
-    category: 'investment',
-    riskLevel: 'high',
-    description: 'Stock-focused fund aiming for maximum long-term growth.',
+    name: 'Seguro de Hogar Plus',
+    type: 'Seguro de Propiedad',
+    category: 'Seguros',
+    interestRate: 1.5,
+    description:
+      'Seguro integral del hogar que cubre daños a la propiedad y responsabilidad civil.',
     benefits: [
-      'Potential for high returns',
-      'Focus on emerging technologies',
-      'Global market exposure',
-      'Active management strategy'
+      'Cobertura de vivienda',
+      'Protección de bienes personales',
+      'Cobertura de responsabilidad civil',
+      'Cobertura adicional de gastos de vida'
     ],
-    imageUrl: '/images/products/aggressive-fund.jpg',
-    returnRate: 12.5
+    imageUrl: '/images/segurossalud.jpg',
+    coverage: 'Hasta $500,000'
   },
+
   {
     id: '8',
-    name: 'Home Insurance Plus',
-    type: 'Property Insurance',
-    category: 'insurance',
-    description:
-      'Comprehensive home insurance covering property damage and liability.',
-    benefits: [
-      'Dwelling coverage',
-      'Personal property protection',
-      'Liability coverage',
-      'Additional living expenses coverage'
-    ],
-    imageUrl: '/images/products/home-insurance.jpg',
-    coverage: 'Up to $500,000'
-  },
-  {
-    id: '9',
-    name: 'Life Assurance Premium',
-    type: 'Life Insurance',
-    category: 'insurance',
-    description:
-      "Protect your family's financial future with our comprehensive life insurance plan.",
-    benefits: [
-      'Death benefit',
-      'Cash value accumulation',
-      'Premium waiver options',
-      'Critical illness riders available'
-    ],
-    imageUrl: '/images/products/life-insurance.jpg',
-    coverage: 'Up to $1,000,000'
-  },
-  {
-    id: '10',
-    name: 'Personal Loan Flex',
-    type: 'Personal Loan',
-    category: 'loan',
+    name: 'Préstamo Personal Flex',
+    type: 'Préstamo Personal',
+    category: 'Préstamos',
     interestRate: 8.9,
     description:
-      'Flexible personal loan with competitive rates and no early repayment fees.',
+      'Préstamo personal flexible con tasas competitivas y sin comisiones por reembolso anticipado.',
     benefits: [
-      'Fast approval process',
-      'No collateral required',
-      'Flexible repayment terms',
-      'No early repayment penalties'
+      'Proceso de aprobación rápido',
+      'No se requiere garantía',
+      'Términos de pago flexibles',
+      'Sin penalizaciones por pago anticipado'
     ],
-    imageUrl: '/images/products/personal-loan.jpg',
+    imageUrl: '/images/prestamo-financiero.avif',
     termLength: 60
   },
   {
-    id: '11',
-    name: 'Home Mortgage Pro',
-    type: 'Mortgage',
-    category: 'loan',
+    id: '9',
+    name: 'Hipoteca Pro',
+    type: 'Hipoteca',
+    category: 'Préstamos',
     interestRate: 4.5,
     description:
-      'Competitive mortgage rates with flexible terms and dedicated advisor support.',
+      'Tasas hipotecarias competitivas con términos flexibles y apoyo de un asesor dedicado.',
     benefits: [
-      'Fixed and variable rates available',
-      'Up to 90% loan-to-value ratio',
-      'Free property valuation',
-      'Dedicated mortgage advisor'
+      'Tasas fijas y variables disponibles',
+      'Hasta el 90% de relación préstamo-valor',
+      'Valoración de propiedad gratuita',
+      'Asesor hipotecario dedicado'
     ],
-    imageUrl: '/images/products/mortgage.jpg',
+    imageUrl: '/images/prestamo-personal.jpg',
     termLength: 360
+  }
+]
+
+export const footerLinks = [
+  {
+    title: 'Productos',
+    links: [
+      { label: 'Cuentas', href: '#' },
+      { label: 'Tarjetas', href: '#' },
+      { label: 'Préstamos', href: '#' },
+      { label: 'Inversiones', href: '#' },
+      { label: 'Seguros', href: '#' }
+    ]
   },
   {
-    id: '12',
-    name: 'Business Credit Line',
-    type: 'Business Loan',
-    category: 'loan',
-    interestRate: 6.5,
-    description:
-      'Flexible credit line for businesses with competitive rates and tailored repayment options.',
-    benefits: [
-      'Only pay interest on what you borrow',
-      'Quick access to funds',
-      'No application fees',
-      'Flexible repayment options'
-    ],
-    imageUrl: '/images/products/business-credit.jpg',
-    termLength: 84
+    title: 'Empresa',
+    links: [
+      { label: 'Sobre Nosotros', href: '#' },
+      { label: 'Carreras', href: '#' },
+      { label: 'Noticias', href: '#' },
+      { label: 'Contacto', href: '#' }
+    ]
+  },
+  {
+    title: 'Recursos',
+    links: [
+      { label: 'Soporte', href: '#' },
+      { label: 'Preguntas Frecuentes', href: '#' },
+      { label: 'Seguridad', href: '#' },
+      { label: 'Política de Privacidad', href: '#' },
+      { label: 'Términos de Servicio', href: '#' }
+    ]
   }
+]
+
+export const navItems = [
+  { name: 'Inicio', href: '/' },
+  { name: 'Productos', href: '#products' },
+  { name: 'Nosotros', href: '#about' },
+  { name: 'Contacto', href: '#contact' }
+]
+
+export const categories: { id: string; label: string }[] = [
+  { id: 'all', label: 'Todos los Productos' },
+  { id: 'Cuentas', label: 'Cuentas' },
+  { id: 'Tarjetas', label: 'Tarjetas' },
+  { id: 'Inversiones', label: 'Inversiones' },
+  { id: 'Seguros', label: 'Seguros' },
+  { id: 'Préstamos', label: 'Préstamos' }
 ]
